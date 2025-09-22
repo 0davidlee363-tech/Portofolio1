@@ -1,0 +1,36 @@
+$(document).ready(function() {
+    // Smooth scroll for internal links
+    $('a.nav-link[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 800);
+    });
+
+    // Form validation
+    $('#contact-form').on('submit', function(e) {
+        let allFieldsFilled = true;
+        $(this).find('input[required], textarea[required]').each(function() {
+            if ($(this).val() === '') {
+                allFieldsFilled = false;
+            }
+        });
+
+        if (!allFieldsFilled) {
+            alert('Please fill out all required fields.');
+            e.preventDefault();
+        } else {
+            // Placeholder for form submission logic
+            alert('Thank you for your message! Your form has been submitted.');
+            // This prevents the page from reloading.
+            e.preventDefault(); 
+        }
+    });
+
+    // Project Modal
+    $('.project-card').on('click', function() {
+        // You can use this to fetch and display dynamic project details later
+        // For now, it simply triggers the Bootstrap modal.
+    });
+});

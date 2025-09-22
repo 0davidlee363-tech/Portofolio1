@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="d-flex align-items-center justify-content-center text-white text-center">
+            <div class="container row d-flex align-items-center">
+                <div class="col-md-6 text-center">
+                    <img src="davidjj.jpg" alt="Your Photo" class="img-fluid rounded-circle" style="width: 250px; height: 250px; object-fit: cover;">
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0 text-md-left">
+                    <h1 class="display-4 font-weight-bold">David Portfolio</h1>
+                    <p class="lead">Saya tahu tema dev fronted</Wbr>.</p>
+                    <a href="#" class="btn btn-outline-light mt-3">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5 bg-light text-dark">
+            <div class="container">
+                <h2 class="text-center mb-4">About</h2>
+                <p class="text-center">saya adalah seorang dev fronted.</p>
+                </div>
+        </section>
+
+        <section id="projects" class="py-5 text-white bg-dark">
+            <div class="container">
+                <h2 class="text-center mb-4">Projects</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-secondary text-white project-card" data-toggle="modal" data-target="#projectModal">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project Comming Soon</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-secondary text-white project-card" data-toggle="modal" data-target="#projectModal">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project Comming Soon</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card bg-secondary text-white project-card" data-toggle="modal" data-target="#projectModal">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Project Comming Soon</h5>
+                                <p class="card-text">.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light text-dark">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is where the detailed information about the project will be displayed.</p>
+                </div>

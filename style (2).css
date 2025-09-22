@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Home Section Styling */
+#home {
+    height: 100vh;
+    background-color: #212529;
+    padding-top: 56px; /* Adjust for fixed navbar */
+}
+
+/* About & Contact Section Styling */
+#about, #contact {
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Project Cards */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
